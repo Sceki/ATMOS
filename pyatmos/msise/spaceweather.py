@@ -91,7 +91,7 @@ def read_sw_nrlmsise00(swfile):
             continue    
         if line.startswith('END DAILY_PREDICTED'): break 
         if flag2 == 1: SW_PRE.append(line.split())    
-    SW_OBS_PRE = np.vstack((np.array(SW_OBS),np.array(SW_PRE)))   
+    SW_OBS_PRE = np.array(SW_OBS)   
     # inverse sort
     SW_OBS_PRE = np.flip(SW_OBS_PRE,0).astype(dtype='<U8')
     ymds = np.apply_along_axis(''.join, 1, SW_OBS_PRE[:,:3])
