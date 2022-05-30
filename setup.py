@@ -11,7 +11,7 @@ setup(
     long_description_content_type = 'text/markdown',
     long_description = open('README.md', 'rb').read().decode('utf-8'),
     keywords = ['coesa76','nrlmsise00','jb2008'],
-    python_requires = '>=3.8',
+    python_requires = '>=3.7',
     classifiers = [
         'Development Status :: 4 - Beta',
         'Intended Audience :: Education',
