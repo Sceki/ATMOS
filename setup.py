@@ -28,7 +28,7 @@ setup(
         'numpy',
         'numba',
         'astropy',
-        'pyshtools',
+        'pyshtools==4.9.1',
         'tqdm',
         'colorama'
         ]
