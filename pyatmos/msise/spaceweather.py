@@ -130,7 +130,7 @@ def get_sw(SW_OBS_PRE,t_ymd,hour):
     aph_tmp_b1 = SW_OBS_PRE[j+1,12:20]
     aph_tmp_b2 = SW_OBS_PRE[j+2,12:20]
     aph_tmp_b3 = SW_OBS_PRE[j+3,12:20]
-    aph_tmp = np.hstack((aph_tmp_b3,aph_tmp_b2,aph_tmp_b1,aph_tmp_b0))[::-1].astype(np.float)
+    aph_tmp = np.hstack((aph_tmp_b3,aph_tmp_b2,aph_tmp_b1,aph_tmp_b0))[::-1].astype(float)
     apc_index = 7-i
     aph_c369 = aph_tmp[apc_index:apc_index+4]
     aph_1233 = np.average(aph_tmp[apc_index+4:apc_index+12])
